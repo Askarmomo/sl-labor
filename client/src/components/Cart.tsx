@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
 
+type MyComponentProps = {
+    role: string;
 
-const Cart = ({ role }) => {
+};
+
+const Cart = ({ role }: MyComponentProps) => {
     return (
         <section>
             <div className={` flex items-center space-x-4 pr-2 ${role === "worker" ? "bg-blue-100" : "bg-green-100"} rounded-xl`}>
